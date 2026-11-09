@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5S8RWPGF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MotoGrip | Carrito</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar">ENVÍOS A TODO COLOMBIA · COMPRA SEGURA · PRODUCTOS PARA TU MOTO</div>
+<header class="header"><a href="index.html"><img src="assets/logo.png" class="logo" alt="MotoGrip"></a><nav class="nav"><a data-current href="index.html">INICIO</a><a data-current href="productos.html">PRODUCTOS</a><a data-current href="contacto.html">CONTACTO</a></nav><div class="header-actions"><a class="login-link" href="login.html">INICIAR SESIÓN</a><a class="cart-link" href="carrito.html">🛒 CARRITO <span class="badge" data-cart-count>0</span></a></div></header>
+<main class="cart-page"><section class="section"><div class="section-title"><div class="eyebrow">MOTOGRIP</div><h2>MI CARRITO</h2><p>Revisa tus productos antes de iniciar la compra.</p></div><div class="cart-layout"><div class="cart-panel"><div id="cartItems"></div></div><aside class="summary"><h2>RESUMEN</h2><div class="summary-line"><span>Subtotal</span><b id="cartSubtotal">$0</b></div><div class="summary-line"><span>Envío</span><span>Por calcular</span></div><hr><div class="summary-line"><strong>Total</strong><strong id="cartTotal">$0</strong></div><button class="btn" onclick="checkout()">INICIAR COMPRA</button><br><br><a href="productos.html" style="display:block;text-align:center;font-weight:700">SEGUIR COMPRANDO</a></aside></div></section></main>
+<footer><div><h3>MOTOGRIP</h3><p>Tu tienda virtual para motociclistas.</p></div><div><h3>NAVEGACIÓN</h3><a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="contacto.html">Contacto</a></div><div><h3>CUENTA</h3><a href="login.html">Iniciar sesión</a></div></footer>
+<script src="data.js"></script>
+<script>function checkout(){if(!getCart().length){showToast('Agrega productos antes de continuar');return}showToast('Compra preparada. Aquí puedes conectar tu pasarela de pago.')}fetch('header.html').then(r=>r.text()).then(h=>{document.getElementById('header').innerHTML=h;updateCartBadge()})</script>
+<script src="nav.js"></script>
+</body>
+</html>

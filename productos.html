@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5S8RWPGF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MotoGrip | Productos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar">ENVÍOS A TODO COLOMBIA · COMPRA SEGURA · PRODUCTOS PARA TU MOTO</div>
+
+<header class="header"><a href="index.html"><img src="assets/logo.png" class="logo" alt="MotoGrip"></a><nav class="nav"><a data-current href="index.html">INICIO</a><a data-current href="productos.html">PRODUCTOS</a><a data-current href="contacto.html">CONTACTO</a></nav><div class="header-actions"><a class="login-link" href="login.html">INICIAR SESIÓN</a><a class="cart-link" href="carrito.html">🛒 CARRITO <span class="badge" data-cart-count>0</span></a></div></header>
+
+<main class="product-page">
+<section class="section">
+<div class="section-title">
+<div class="eyebrow">INICIO / PRODUCTOS</div>
+<h2>ELIGE LA LLANTA PARA TU MOTO</h2>
+<p>Busca, filtra y ordena las referencias disponibles.</p>
+</div>
+<div class="catalog-layout">
+<aside class="filters">
+<h3>FILTRAR POR</h3>
+<div class="filter-group">
+<label class="title">BUSCAR</label>
+<input id="searchProducts" style="width:100%;padding:10px;border:1px solid #ccc" placeholder="Marca, modelo o medida">
+</div>
+<div class="filter-group">
+<label class="title">PRECIO</label>
+<div class="price-row">
+<input id="minPrice" type="number" placeholder="Mínimo">
+<input id="maxPrice" type="number" placeholder="Máximo">
+</div>
+</div>
+<div class="filter-group">
+<label class="title">MARCA</label>
+<div class="checks">
+<label><input class="brand-check" type="checkbox" value="METZELER"> METZELER</label>
+<label><input class="brand-check" type="checkbox" value="BRIDGESTONE"> BRIDGESTONE</label>
+<label><input class="brand-check" type="checkbox" value="PIRELLI"> PIRELLI</label>
+<label><input class="brand-check" type="checkbox" value="MICHELIN"> MICHELIN</label>
+</div>
+</div>
+<button class="btn dark clear-filter" style="width:100%;margin-top:20px">LIMPIAR FILTROS</button>
+</aside>
+<div class="catalog">
+<div class="catalog-top">
+<strong id="resultCount">Productos</strong>
+<select id="sortProducts">
+<option value="popular">Más vendidos</option>
+<option value="low">Precio menor</option>
+<option value="high">Precio mayor</option>
+</select>
+</div>
+<div id="productGrid" class="product-grid"></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div><h3>MOTOGRIP</h3><p>Encuentra el agarre perfecto para tu moto.</p></div>
+<div><h3>NAVEGACIÓN</h3><a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="contacto.html">Contacto</a></div>
+<div><h3>AYUDA</h3><a href="contacto.html">Contáctanos</a><a href="carrito.html">Carrito</a></div>
+</footer>
+
+<script src="data.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

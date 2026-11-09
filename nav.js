@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-current]').forEach(a=>{if(a.getAttribute('href')===location.pathname.split('/').pop()||location.pathname.endsWith(a.getAttribute('href')))a.classList.add('active')})});
